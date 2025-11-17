@@ -1,8 +1,19 @@
-# ✈️ AI Travel Assistant
+# ✈️ Ghumakkad.AI
 
 A web-based AI chat assistant that provides personalized travel itineraries. Built with a Python Flask backend and the Groq API, this assistant reads a `TravelPreference.csv` file to generate custom travel plans tailored to a specific user's budget, preferred activities, and travel history.
 
+## 🔴 Live Demo
+
+**Check out the live version deployed on Render:**
+
+**[https://ghumakkad-ai.onrender.com/](https://ghumakkad-ai.onrender.com/)**
+
+*(Note: The free tier may take 30-60 seconds to "wake up" if it's been inactive.)*
+
+---
+
 ![Chat UI Screenshot](ss.png)
+*(Make sure this screenshot file is in your repo)*
 
 ## ✨ Core Features
 
@@ -14,15 +25,16 @@ A web-based AI chat assistant that provides personalized travel itineraries. Bui
 
 ## 🛠️ Tech Stack
 
-* **Backend:** Python, Flask
+* **Backend:** Python, Flask, Gunicorn
 * **AI:** Groq API
 * **Data:** Pandas (for CSV parsing)
 * **Frontend:** HTML, CSS, JavaScript
-* **Libraries:** `python-dotenv` (for API keys), `marked.js` (for Markdown rendering)
+* **Deployment:** Render
+* **Libraries:** `python-dotenv`, `marked.js`
 
-## 🚀 Getting Started
+## 🚀 Local Development Setup
 
-Follow these steps to get the project running on your local machine.
+Want to run or modify the project locally?
 
 ### 1. Prerequisites
 
@@ -44,14 +56,6 @@ Follow these steps to get the project running on your local machine.
     ```
 
 3.  **Install the required libraries:**
-    *Create a file named `requirements.txt` and paste the following into it:*
-    ```
-    flask
-    groq
-    pandas
-    python-dotenv
-    ```
-    *Now, run the installer:*
     ```bash
     pip install -r requirements.txt
     ```
@@ -63,11 +67,11 @@ Follow these steps to get the project running on your local machine.
     ```
 
 5.  **Customize your data:**
-    Edit the `TravelPreference.csv` file to add your own travelers, preferences, and budgets. The app will read this file live.
+    Edit the `TravelPreference.csv` file to add your own travelers, preferences, and budgets.
 
-## 🏃‍♀️ How to Run
+## 🏃‍♀️ How to Run Locally
 
-1.  Run the Flask application:
+1.  Run the Flask development server:
     ```bash
     python app.py
     ```
