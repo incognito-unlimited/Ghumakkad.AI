@@ -13,7 +13,6 @@ A web-based AI chat assistant that provides personalized travel itineraries. Bui
 ---
 
 ![Chat UI Screenshot](ss.png)
-*(Make sure this screenshot file is in your repo)*
 
 ## ✨ Core Features
 
